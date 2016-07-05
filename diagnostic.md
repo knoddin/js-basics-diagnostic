@@ -7,7 +7,15 @@ Assume all code executes in strict mode.
 
 ## Question 1
 
-Please list the JavaScript primitives and give one example of each.
+```md
+Type | Examples
+---- | ----------------
+Number | `-0`, `NaN`, `Infinity`
+String | `''`, `"The non-empty string."`
+Boolean | `true`, `false`
+null | `null`
+undefined | `undefined`
+```
 
 ## Question 2
 
@@ -18,8 +26,15 @@ c = c + d;
 
 ```
 
-After this code executes, what is the value of c?  Please identify the operators in the last line of this program `c = c + d;` and explain what they do.
+After this code executes, what is the value of c?  Please identify the
+operators in the last line of this program `c = c + d;` and explain what they
+do.
 
+```js
+c = 7
+= reassigns the value of c
++ makes that value the addition of c and d
+```
 
 ## Question 3
 
@@ -32,8 +47,13 @@ y = 10;
 
 After each line of code executes, what are the values of x and y?  Do the variables change?  Do their values?
 
-<!-- solution below -->
-
+```js
+x = 4
+y = 3
+x = 3
+y = 10
+The variables do not change, but their values do.
+```
 
 ## Question 4
 
@@ -45,6 +65,11 @@ weather === "sunny";
 
 What are the values of these expressions?  Explain your answers.
 
+```js
+let weather;  // undefined
+weather = "sunny"; // "sunny"
+weather === "sunny"; // true
+```
 
 ## Question 5
 
